@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kirimaini Goat Farm | Premium Goats & He-Goats in Nyandarua</title>
+<meta name="description" content="Buy healthy, vet-checked goats and he-goats at Kirimaini, Ol Kalou, Nyandarua County. Top breeds, fair prices, expert advice. Order by phone call today." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============ BASE ============ */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green:#123d2b;
+  --green2:#1d5c41;
+  --leaf:#2f8a5b;
+  --gold:#e0a838;
+  --gold2:#c4871a;
+  --cream:#fdf9f1;
+  --sand:#f4ecdb;
+  --ink:#16211c;
+  --muted:#5f6f66;
+  --r:18px;
+  --shadow:0 14px 34px rgba(18,61,43,.12);
+  --shadow-lg:0 26px 60px rgba(18,61,43,.20);
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Outfit',system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  background:var(--cream);color:var(--ink);line-height:1.68;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;line-height:1.14;letter-spacing:-.015em}
+h1{font-size:clamp(2.1rem,5.4vw,3.6rem)}
+h2{font-size:clamp(1.7rem,3.6vw,2.5rem);margin-bottom:.5rem}
+h3{font-size:clamp(1.15rem,2vw,1.4rem)}
+p{color:var(--muted)}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.section{padding:76px 0}
+.section.tight{padding:52px 0}
+.eyebrow{
+  display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold2);background:rgba(224,168,56,.14);
+  padding:7px 15px;border-radius:999px;margin-bottom:14px;
+}
+.lead{font-size:1.06rem;max-width:70ch}
+.center{text-align:center}
+.center .lead{margin-left:auto;margin-right:auto}
+
+/* ============ HEADER ============ */
+header{
+  position:sticky;top:0;z-index:70;
+  background:rgba(253,249,241,.9);
+  -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(18,61,43,.09);
+}
+.nav-wrap{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:11px 20px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:700;color:var(--green)}
+.logo-mark{
+  width:42px;height:42px;border-radius:13px;flex:0 0 42px;
+  background:linear-gradient(140deg,var(--green),var(--leaf));
+  display:grid;place-items:center;font-size:1.25rem;
+  box-shadow:0 8px 18px rgba(18,61,43,.28);
+}
+.logo-txt{display:flex;flex-direction:column;line-height:1.1}
+.logo-txt small{font-weight:400;font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.desktop-nav{display:flex;align-items:center;gap:2px}
+.desktop-nav a{
+  padding:9px 13px;border-radius:999px;font-size:.9rem;font-weight:500;
+  text-decoration:none;color:var(--green);transition:.22s;position:relative;white-space:nowrap;
+}
+.desktop-nav a:hover{background:var(--sand);transform:translateY(-1px)}
+.desktop-nav a.active{background:var(--green);color:#fff;box-shadow:0 8px 18px rgba(18,61,43,.25)}
+.burger{
+  display:none;width:48px;height:48px;border:none;border-radius:14px;cursor:pointer;
+  background:var(--green);place-items:center;flex-direction:column;gap:5px;padding:0;
+  transition:.25s;flex:0 0 48px;
+}
+.burger:hover{background:var(--green2)}
+.burger span{display:block;width:22px;height:2.5px;border-radius:2px;background:#fff;transition:.3s}
+.burger.x span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.burger.x span:nth-child(2){opacity:0}
+.burger.x span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+
+/* ============ DRAWER ============ */
+.overlay{
+  position:fixed;inset:0;background:rgba(9,28,20,.55);z-index:90;
+  opacity:0;pointer-events:none;transition:.3s;-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);
+}
+.overlay.show{opacity:1;pointer-events:auto}
+.drawer{
+  position:fixed;top:0;right:0;height:100%;width:min(340px,87vw);z-index:100;
+  background:#fff;transform:translateX(105%);
+  transition:transform .42s cubic-bezier(.4,0,.2,1);
+  box-shadow:-24px 0 60px rgba(0,0,0,.22);
+  padding:20px 18px 40px;overflow-y:auto;display:flex;flex-direction:column;
+}
+.drawer.open{transform:translateX(0)}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid rgba(18,61,43,.1)}
+.drawer-head b{font-family:'Fraunces',serif;font-size:1.15rem;color:var(--green)}
+.close-btn{
+  width:40px;height:40px;border-radius:12px;border:none;cursor:pointer;
+  background:var(--sand);color:var(--green);font-size:1.05rem;font-weight:700;transition:.22s;
+}
+.close-btn:hover{background:var(--green);color:#fff;transform:rotate(90deg)}
+.drawer-label{font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:16px 0 6px 12px}
+.drawer a.dlink{
+  display:flex;align-items:center;gap:12px;padding:13px 14px;border-radius:14px;
+  text-decoration:none;font-weight:500;color:var(--ink);transition:.22s;font-size:1rem;
+}
+.drawer a.dlink:hover{background:var(--sand);padding-left:20px}
+.drawer a.dlink.active{background:var(--green);color:#fff}
+.drawer a.dlink .ico{width:22px;text-align:center;font-size:1.05rem}
+.drawer-call{
+  margin-top:22px;display:flex;align-items:center;justify-content:center;gap:10px;
+  padding:16px;border-radius:16px;text-decoration:none;font-weight:700;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));color:#3a2a05;
+  box-shadow:0 12px 26px rgba(224,168,56,.4);transition:.25s;
+}
+.drawer-call:hover{transform:translateY(-3px)}
+
+/* ============ BUTTONS ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:14px 27px;border-radius:999px;font-weight:600;font-size:.97rem;
+  text-decoration:none;border:none;cursor:pointer;transition:.26s;font-family:inherit;
+}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#3a2a05;box-shadow:0 12px 26px rgba(224,168,56,.38)}
+.btn-gold:hover{transform:translateY(-3px);box-shadow:0 18px 34px rgba(224,168,56,.5)}
+.btn-green{background:var(--green);color:#fff;box-shadow:0 12px 26px rgba(18,61,43,.28)}
+.btn-green:hover{background:var(--green2);transform:translateY(-3px)}
+.btn-ghost{border:2px solid rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.14);transform:translateY(-3px)}
+.btn-outline{border:2px solid var(--green);color:var(--green);background:transparent}
+.btn-outline:hover{background:var(--green);color:#fff;transform:translateY(-3px)}
+.btn-row{display:flex;flex-wrap:wrap;gap:13px}
+
+/* ============ PAGES ============ */
+.page{display:none}
+.page.active{display:block;animation:pageIn .5s ease both}
+@keyframes pageIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;overflow:hidden;color:#fff;
+  background:linear-gradient(145deg,#0c3122 0%,#1d5c41 52%,#2f8a5b 100%);
+  padding:64px 0 78px;
+}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(70px);opacity:.4}
+.hero::before{width:460px;height:460px;background:#4fd18a;top:-180px;left:-140px}
+.hero::after{width:400px;height:400px;background:#e0a838;bottom:-190px;right:-120px;opacity:.3}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero .eyebrow{background:rgba(255,255,255,.16);color:#ffe4a3}
+.hero h1{color:#fff;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p{color:rgba(255,255,255,.86);font-size:1.08rem;max-width:56ch}
+.hero-img{
+  border-radius:26px;overflow:hidden;box-shadow:var(--shadow-lg);
+  border:5px solid rgba(255,255,255,.16);transform:rotate(1.4deg);
+  transition:.5s;
+}
+.hero-img:hover{transform:rotate(0) scale(1.02)}
+.trust{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;
+  margin-top:44px;position:relative;z-index:2;
+}
+.trust div{
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);
+  border-radius:16px;padding:14px 16px;backdrop-filter:blur(6px);
+}
+.trust b{display:block;font-family:'Fraunces',serif;font-size:1.35rem;color:var(--gold)}
+.trust span{font-size:.82rem;color:rgba(255,255,255,.85)}
+
+/* ============ CARDS ============ */
+.grid{display:grid;gap:24px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(285px,1fr))}
+.g2{grid-template-columns:repeat(auto-fit,minmax(330px,1fr))}
+.card{
+  background:#fff;border-radius:var(--r);padding:28px;
+  box-shadow:var(--shadow);border:1px solid rgba(18,61,43,.06);
+  transition:.3s;position:relative;overflow:hidden;
+}
+.card:hover{transform:translateY(-7px);box-shadow:var(--shadow-lg)}
+.card .ic{
+  width:54px;height:54px;border-radius:16px;display:grid;place-items:center;
+  font-size:1.5rem;background:var(--sand);margin-bottom:16px;
+}
+.card h3{margin-bottom:9px;color:var(--green)}
+.card p{font-size:.95rem}
+
+/* ============ GALLERY ============ */
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:22px}
+.gcard{
+  background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);
+  border:1px solid rgba(18,61,43,.07);cursor:pointer;transition:.3s;position:relative;
+}
+.gcard:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg)}
+.gcard .thumb{position:relative;overflow:hidden;aspect-ratio:4/3;background:var(--sand)}
+.gcard .thumb img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.gcard:hover .thumb img{transform:scale(1.07)}
+.gcard .badge{
+  position:absolute;top:12px;left:12px;z-index:2;
+  background:rgba(18,61,43,.88);color:#fff;font-size:.7rem;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:999px;
+  backdrop-filter:blur(6px);
+}
+.gcard .price{
+  position:absolute;bottom:12px;right:12px;z-index:2;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));color:#3a2a05;
+  font-weight:700;font-size:.85rem;padding:7px 14px;border-radius:999px;
+  box-shadow:0 8px 18px rgba(0,0,0,.22);
+}
+.gcard .info{padding:17px 19px 20px}
+.gcard .info h4{font-family:'Fraunces',serif;font-size:1.14rem;color:var(--green);margin-bottom:4px}
+.gcard .info p{font-size:.86rem;margin:0}
+
+/* Lightbox */
+.lightbox{
+  position:fixed;inset:0;z-index:200;background:rgba(8,24,17,.93);
+  display:none;place-items:center;padding:22px;
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+}
+.lightbox.show{display:grid;animation:pageIn .3s ease}
+.lb-inner{max-width:820px;width:100%;background:#fff;border-radius:22px;overflow:hidden;box-shadow:var(--shadow-lg)}
+.lb-inner img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.lb-body{padding:22px 26px 26px}
+.lb-body h3{color:var(--green);margin-bottom:6px}
+.lb-close{
+  position:absolute;top:20px;right:22px;width:46px;height:46px;border-radius:50%;
+  border:none;background:rgba(255,255,255,.16);color:#fff;font-size:1.3rem;cursor:pointer;transition:.25s;
+}
+.lb-close:hover{background:var(--gold);color:#3a2a05;transform:rotate(90deg)}
+
+/* ============ REVIEWS ============ */
+.review{
+  background:#fff;border-radius:var(--r);padding:28px;box-shadow:var(--shadow);
+  border:1px solid rgba(18,61,43,.06);transition:.3s;display:flex;flex-direction:column;
+}
+.review:hover{transform:translateY(-7px);box-shadow:var(--shadow-lg)}
+.stars{color:var(--gold);letter-spacing:2px;margin-bottom:12px;font-size:1rem}
+.review p{font-size:.95rem;font-style:italic;color:#3f4d45;flex:1}
+.who{display:flex;align-items:center;gap:13px;margin-top:18px;padding-top:16px;border-top:1px solid rgba(18,61,43,.09)}
+.avatar{
+  width:46px;height:46px;border-radius:50%;flex:0 0 46px;display:grid;place-items:center;
+  background:linear-gradient(140deg,var(--green),var(--leaf));color:#fff;font-weight:700;font-size:1.05rem;
+}
+.who b{display:block;font-size:.94rem;color:var(--green);font-family:'Outfit',sans-serif}
+.who span{font-size:.79rem;color:var(--muted)}
+
+/* ============ FAQ ============ */
+.faq-list{max-width:880px;margin:0 auto}
+.faq{
+  background:#fff;border-radius:16px;margin-bottom:13px;overflow:hidden;
+  box-shadow:0 6px 20px rgba(18,61,43,.07);border:1px solid rgba(18,61,43,.07);transition:.25s;
+}
+.faq.open{box-shadow:var(--shadow)}
+.faq-q{
+  width:100%;text-align:left;background:none;border:none;cursor:pointer;font-family:inherit;
+  font-size:1rem;font-weight:600;color:var(--green);padding:19px 22px;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;transition:.2s;
+}
+.faq-q:hover{background:var(--sand)}
+.faq-q .plus{
+  width:28px;height:28px;flex:0 0 28px;border-radius:50%;background:var(--sand);
+  display:grid;place-items:center;font-size:1.05rem;color:var(--green);transition:.3s;font-weight:700;
+}
+.faq.open .faq-q .plus{background:var(--green);color:#fff;transform:rotate(135deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.faq-a p{padding:0 22px 20px;font-size:.94rem}
+
+/* ============ FORMS ============ */
+.form-card{background:#fff;border-radius:22px;padding:34px;box-shadow:var(--shadow);border:1px solid rgba(18,61,43,.06)}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:.84rem;font-weight:600;color:var(--green);margin-bottom:7px}
+.field input,.field select,.field textarea{
+  width:100%;padding:13px 16px;border-radius:13px;border:1.6px solid rgba(18,61,43,.16);
+  font-family:inherit;font-size:.95rem;background:var(--cream);color:var(--ink);transition:.22s;
+}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:none;border-color:var(--leaf);background:#fff;box-shadow:0 0 0 4px rgba(47,138,91,.12);
+}
+.field textarea{resize:vertical;min-height:120px}
+.note{
+  background:rgba(224,168,56,.13);border-left:4px solid var(--gold);
+  padding:14px 18px;border-radius:0 12px 12px 0;font-size:.88rem;color:#5a4413;margin-top:14px;
+}
+.success{
+  display:none;background:rgba(47,138,91,.12);border-left:4px solid var(--leaf);
+  padding:16px 18px;border-radius:0 12px 12px 0;color:#1d5c41;font-weight:500;margin-top:16px;
+}
+.success.show{display:block;animation:pageIn .4s ease}
+
+/* ============ LOCATION ============ */
+.map-frame{
+  border-radius:22px;overflow:hidden;box-shadow:var(--shadow-lg);
+  border:6px solid #fff;line-height:0;
+}
+.map-frame iframe{width:100%;height:470px;border:0;display:block}
+.info-line{display:flex;gap:14px;align-items:flex-start;padding:16px 0;border-bottom:1px dashed rgba(18,61,43,.14)}
+.info-line:last-child{border-bottom:none}
+.info-line .ic{
+  width:44px;height:44px;flex:0 0 44px;border-radius:13px;background:var(--sand);
+  display:grid;place-items:center;font-size:1.15rem;
+}
+.info-line b{display:block;color:var(--green);font-size:.95rem;font-family:'Outfit',sans-serif}
+.info-line span{font-size:.89rem;color:var(--muted)}
+
+/* ============ CTA BAND ============ */
+.cta-band{
+  background:linear-gradient(135deg,#0f3524,#1d5c41 60%,#2f8a5b);
+  color:#fff;border-radius:26px;padding:52px 40px;text-align:center;
+  position:relative;overflow:hidden;box-shadow:var(--shadow-lg);
+}
+.cta-band::after{
+  content:"";position:absolute;width:340px;height:340px;border-radius:50%;
+  background:rgba(224,168,56,.22);filter:blur(60px);top:-140px;right:-90px;
+}
+.cta-band h2{color:#fff;position:relative;z-index:2}
+.cta-band p{color:rgba(255,255,255,.85);max-width:62ch;margin:12px auto 26px;position:relative;z-index:2}
+.cta-band .btn-row{justify-content:center;position:relative;z-index:2}
+
+/* ============ STEPS ============ */
+.step{display:flex;gap:18px;align-items:flex-start}
+.step .num{
+  width:50px;height:50px;flex:0 0 50px;border-radius:15px;
+  background:linear-gradient(140deg,var(--green),var(--leaf));color:#fff;
+  display:grid;place-items:center;font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700;
+  box-shadow:0 10px 22px rgba(18,61,43,.24);
+}
+.step h3{margin-bottom:5px;font-size:1.13rem}
+.step p{font-size:.93rem}
+
+/* ============ TABLE ============ */
+.tbl{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);font-size:.93rem}
+.tbl th{background:var(--green);color:#fff;text-align:left;padding:15px 18px;font-weight:600;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase}
+.tbl td{padding:14px 18px;border-bottom:1px solid rgba(18,61,43,.08);color:#3f4d45}
+.tbl tr:last-child td{border-bottom:none}
+.tbl tr:hover td{background:var(--sand)}
+.tbl td b{color:var(--green)}
+
+/* ============ FOOTER ============ */
+footer{background:#0c2a1d;color:rgba(255,255,255,.72);padding:58px 0 26px;margin-top:70px}
+.f-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:36px}
+footer h4{color:#fff;font-size:1.02rem;margin-bottom:16px;font-family:'Fraunces',serif}
+footer a{color:rgba(255,255,255,.72);text-decoration:none;font-size:.9rem;display:block;padding:5px 0;transition:.2s}
+footer a:hover{color:var(--gold);padding-left:6px}
+footer p{color:rgba(255,255,255,.6);font-size:.9rem}
+.f-logo{display:flex;align-items:center;gap:11px;margin-bottom:16px;color:#fff;font-weight:700}
+.f-bottom{
+  margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.83rem;
+}
+.f-call{
+  display:inline-flex;align-items:center;gap:9px;margin-top:14px;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));color:#3a2a05!important;
+  padding:12px 22px;border-radius:999px;font-weight:700;font-size:.9rem;
+  text-decoration:none;box-shadow:0 10px 22px rgba(224,168,56,.3);
+}
+.f-call:hover{padding-left:22px!important;transform:translateY(-2px)}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1080px){
+  .desktop-nav{display:none}
+  .burger{display:flex}
+}
+@media(max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero{padding:48px 0 60px}
+  .f-grid{grid-template-columns:1fr 1fr;gap:28px}
+  .section{padding:56px 0}
+}
+@media(max-width:620px){
+  .section{padding:46px 0}
+  .cta-band{padding:38px 22px;border-radius:20px}
+  .form-card{padding:24px 20px}
+  .f-grid{grid-template-columns:1fr}
+  .map-frame iframe{height:340px}
+  .btn{width:100%}
+  .btn-row{flex-direction:column}
+  .tbl{font-size:.84rem}
+  .tbl th,.tbl td{padding:11px 12px}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+  <div class="nav-wrap">
+    <a href="#home" class="logo">
+      <span class="logo-mark">🐐</span>
+      <span class="logo-txt">
+        <span>Kirimaini Goat Farm</span>
+        <small>Ol Kalou · Nyandarua</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#home"     data-nav="home">Home</a>
+      <a href="#contact"  data-nav="contact">Contact</a>
+      <a href="#reviews"  data-nav="reviews">Reviews</a>
+      <a href="#gallery"  data-nav="gallery">Gallery</a>
+      <a href="#about"    data-nav="about">About</a>
+      <a href="#faqs"     data-nav="faqs">FAQs</a>
+      <a href="#location" data-nav="location">Location</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ================= DRAWER MENU ================= -->
+<div class="overlay" id="overlay"></div>
+
+<nav class="drawer" id="drawer" aria-label="Main menu">
+  <div class="drawer-head">
+    <b>Menu</b>
+    <button class="close-btn" id="closeBtn" aria-label="Close menu">✕</button>
+  </div>
+
+  <a href="#home"     class="dlink" data-nav="home"><span class="ico">🏠</span> Home</a>
+  <a href="#contact"  class="dlink" data-nav="contact"><span class="ico">✉️</span> Contact</a>
+  <a href="#reviews"  class="dlink" data-nav="reviews"><span class="ico">⭐</span> Reviews</a>
+  <a href="#gallery"  class="dlink" data-nav="gallery"><span class="ico">🖼️</span> Gallery</a>
+  <a href="#about"    class="dlink" data-nav="about"><span class="ico">ℹ️</span> About</a>
+  <a href="#faqs"     class="dlink" data-nav="faqs"><span class="ico">❓</span> FAQs</a>
+  <a href="#location" class="dlink" data-nav="location"><span class="ico">📍</span> Location</a>
+
+  <div class="drawer-label">Explore More</div>
+  <a href="#breeds"   class="dlink" data-nav="breeds"><span class="ico">🐐</span> Our Goats</a>
+  <a href="#benefits" class="dlink" data-nav="benefits"><span class="ico">💚</span> Benefits</a>
+  <a href="#order"    class="dlink" data-nav="order"><span class="ico">📞</span> How to Order</a>
+
+  <!-- ORDER BY CALL ONLY — no WhatsApp -->
+  <a href="tel:+254715061272" class="drawer-call">📞 Call to Order Now</a>
+</nav>
+
+<main id="app">
+
+<!-- ============================================================
+     PAGE 1 — HOME
+============================================================ -->
+<section class="page active" id="home">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Nyandarua's Trusted Goat Breeders</span>
+        <h1>Premium Goats &amp; He-Goats, <em>Raised Right</em> in the Highlands.</h1>
+        <p>
+          Healthy, vet-checked, fast-growing goats from the cool, clean pastures of Kirimaini,
+          Ol Kalou. Whether you need a strong breeding he-goat, tender meat goats, or a
+          profitable starter herd — we have the right animal waiting for you.
+        </p>
+        <div class="btn-row" style="margin-top:26px">
+          <a href="#gallery" class="btn btn-gold">🖼️ View Our Goats</a>
+          <a href="tel:+254715061272" class="btn btn-ghost">📞 Call to Order</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img id="heroArt" alt="Healthy goat at Kirimaini Goat Farm, Ol Kalou" />
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap" style="margin-top:-42px;position:relative;z-index:5">
+    <div class="trust" style="margin-top:0">
+      <div><b>100%</b><span>Vet-checked &amp; vaccinated</span></div>
+      <div><b>500+</b><span>Happy farmers served</span></div>
+      <div><b>8+</b><span>Premium breeds available</span></div>
+      <div><b>Same&nbsp;Day</b><span>Delivery within Nyandarua</span></div>
+    </div>
+  </div>
+
+  <div class="section wrap">
+    <div class="center">
+      <span class="eyebrow">Why Buyers Choose Us</span>
+      <h2>Goats That Pay You Back</h2>
+      <p class="lead">
+        A goat is not just livestock — it is an investment that grows, multiplies and feeds your family.
+        Every animal that leaves our farm is strong, well-fed and ready to perform.
+      </p>
+    </div>
+
+    <div class="grid g3" style="margin-top:38px">
+      <div class="card">
+        <div class="ic">💪</div>
+        <h3>Robust Highland Genetics</h3>
+        <p>Raised at 2,300m altitude in Nyandarua's cool climate, our goats develop dense muscle,
+           strong bones and natural disease resistance that lowland stock simply cannot match.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🩺</div>
+        <h3>Full Health Records</h3>
+        <p>Every goat is dewormed, vaccinated and inspected by a licensed vet before sale.
+           You receive a clear health history — no guesswork, no hidden problems.</p>
+      </div>
+      <div class="card">
+        <div class="ic">💰</div>
+        <h3>Honest, Fair Pricing</h3>
+        <p>No inflated middleman prices. You buy directly from the farm, which means you pay less
+           and get a healthier animal with full traceability.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🚚</div>
+        <h3>Safe Delivery</h3>
+        <p>We deliver carefully in comfortable transport crates across Nyandarua and neighbouring
+           counties, so your goat arrives calm, hydrated and stress-free.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🧠</div>
+        <h3>Free Expert Advice</h3>
+        <p>Buying your first goat? We guide you on housing, feeding, breeding cycles and market
+           timing — free of charge, for the life of your herd.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🤝</div>
+        <h3>After-Sale Support</h3>
+        <p>Our relationship does not end at the gate. Call us any time for advice on your animal's
+           progress — we answer, and we help.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section tight wrap">
+    <div class="cta-band">
+      <h2>Ready to Own a Quality Goat?</h2>
+      <p>
+        Stock moves fast — especially our top he-goats. Place your order today by phone
+        and we will reserve the best animal for you before it is gone.
+      </p>
+      <div class="btn-row">
+        <a href="tel:+254715061272" class="btn btn-gold">📞 Call to Order Now</a>
+        <a href="#order" class="btn btn-ghost">How Ordering Works</a>
+      </div>
+      <p style="font-size:.8rem;margin-top:16px;opacity:.7">Orders are taken by phone call only.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 2 — ABOUT
+============================================================ -->
+<section class="page" id="about">
+  <div class="wrap section">
+    <div class="center">
+      <span class="eyebrow">Our Story</span>
+      <h2>Rooted in Kirimaini, Growing With Our Farmers</h2>
+      <p class="lead">
+        Kirimaini Goat Farm sits on the fertile slopes of Ol Kalou in Nyandarua County — a region
+        famous for cool air, clean water and lush green pasture. That environment shapes every
+        animal we raise.
+      </p>
+    </div>
+
+    <div class="grid g2" style="margin-top:44px;align-items:start">
+      <div>
+        <h3 style="color:var(--green);margin-bottom:12px">From a Small Herd to a Trusted Name</h3>
+        <p style="margin-bottom:14px">
+          We started with just a handful of local does and one borrowed he-goat. What we lacked in
+          numbers, we made up for in patience and discipline. We studied breeding cycles, invested
+          in quality feed, and refused to cut corners on animal health.
+        </p>
+        <p style="margin-bottom:14px">
+          Today, farmers travel from across Nyandarua, Laikipia, Nakuru and Nyeri to buy from us.
+          Not because we are the biggest farm — but because our goats do what they are supposed
+          to do: grow fast, breed reliably and stay healthy.
+        </p>
+        <p>
+          Every sale carries our name. That is why we treat every animal as if it were staying
+          with us forever.
+        </p>
+
+        <div class="grid g2" style="margin-top:30px;gap:16px">
+          <div class="card" style="padding:20px">
+            <h3 style="font-size:1.05rem">Our Mission</h3>
+            <p style="font-size:.9rem">To make quality goat genetics affordable and accessible to every
+               smallholder farmer in Kenya.</p>
+          </div>
+          <div class="card" style="padding:20px">
+            <h3 style="font-size:1.05rem">Our Promise</h3>
+            <p style="font-size:.9rem">An honest animal, an honest price, and advice you can actually
+               use — every single time.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="padding:0;overflow:hidden">
+        <img id="aboutArt" alt="Goats grazing at Kirimaini Goat Farm" />
+        <div style="padding:26px">
+          <h3 style="color:var(--green);margin-bottom:10px">Why Nyandarua Goats Are Different</h3>
+          <p style="font-size:.94rem;margin-bottom:12px">
+            Altitude, clean water and natural pasture are not small details — they are the reason
+            our goats develop thicker muscle, stronger immunity and better carcass quality.
+          </p>
+          <p style="font-size:.94rem">
+            A goat raised on dusty, overgrazed land will always underperform. A goat raised on
+            Nyandarua's highland pasture arrives at your farm ready to thrive.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 3 — OUR GOATS / BREEDS
+============================================================ -->
+<section class="page" id="breeds">
+  <div class="wrap section">
+    <div class="center">
+      <span class="eyebrow">Our Livestock</span>
+      <h2>Breeds &amp; Types Available</h2>
+      <p class="lead">
+        We keep a mixed herd so that every buyer — whether you want meat, milk, breeding stock
+        or a hardy grazer — finds exactly the right animal.
+      </p>
+    </div>
+
+    <div class="grid g3" style="margin-top:38px">
+      <div class="card">
+        <div class="ic">🐐</div>
+        <h3>Boer &amp; Boer Crosses</h3>
+        <p>Kenya's leading meat breed. Exceptional growth rate, heavy muscling and excellent
+           feed conversion. Ideal for commercial meat production and crossbreeding with local does.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🐏</div>
+        <h3>Galla (Somali) Goats</h3>
+        <p>Hardy, drought-tolerant and famous for high milk yield. Perfect for arid and
+           semi-arid areas where other breeds struggle to survive.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🐑</div>
+        <h3>Small East African</h3>
+        <p>Native, resilient and low-maintenance. Excellent mothers, disease-resistant, and
+           the smartest choice for first-time keepers on a tight budget.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🐐</div>
+        <h3>Toggenburg &amp; Alpine</h3>
+        <p>Dairy specialists producing 2–3 litres of rich milk daily. Calm temperament,
+           easy to milk and highly adaptable to highland conditions.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🐏</div>
+        <h3>Kalahari Red</h3>
+        <p>Beautiful red-coated meat breed with outstanding heat tolerance and a strong
+           carcass. A favourite among farmers targeting premium butcher markets.</p>
+      </div>
+      <div class="card">
+        <div class="ic">🐑</div>
+        <h3>Crossbreed He-Goats</h3>
+        <p>Powerful, proven sires that pass on fast growth and strong conformation to your
+           herd. The fastest way to upgrade your entire flock's genetics.</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:64px;text-align:center">Current Price Guide</h2>
+    <p class="center lead" style="margin-bottom:26px">
+      Prices vary with age, weight and breed. Call us for today's exact availability and pricing.
+    </p>
+
+    <div style="overflow-x:auto">
+      <table class="tbl">
+        <thead>
+          <tr><th>Category</th><th>Typical Age</th><th>Weight Range</th><th>Price Guide</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><b>Young He-Goat (breeding)</b></td><td>8 – 12 months</td><td>35 – 45 kg</td><td>KES 12,000 – 16,000</td></tr>
+          <tr><td><b>Mature He-Goat (proven sire)</b></td><td>18 – 30 months</td><td>55 – 75 kg</td><td>KES 18,000 – 28,000</td></tr>
+          <tr><td><b>Meat Goat (Boer cross)</b></td><td>12 – 18 months</td><td>40 – 60 kg</td><td>KES 13,000 – 20,000</td></tr>
+          <tr><td><b>Breeding Doe</b></td><td>12 – 24 months</td><td>30 – 45 kg</td><td>KES 10,000 – 17,000</td></tr>
+          <tr><td><b>Dairy Doe (in milk)</b></td><td>18 – 36 months</td><td>40 – 55 kg</td><td>KES 18,000 – 30,000</td></tr>
+          <tr><td><b>Young Weaner</b></td><td>3 – 6 months</td><td>15 – 25 kg</td><td>KES 6,000 – 10,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="note" style="max-width:760px;margin:26px auto 0">
+      <b>Note:</b> Prices are a guide only and change with market conditions. Call us for a firm
+      quote on the specific animal you want — we will tell you its exact age, weight and health status.
+    </div>
+
+    <div class="center" style="margin-top:34px">
+      <a href="tel:+254715061272" class="btn btn-gold">📞 Call for Today's Prices</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 4 — BENEFITS
+============================================================ -->
+<section class="page" id="benefits">
+  <div class="wrap section">
+    <div class="center">
+      <span class="eyebrow">Knowledge &amp; Benefits</span>
+      <h2>Why Goats Are the Smartest Investment in Kenya</h2>
+      <p class="lead">
+        Goats are often called "the poor man's cow" — but that name undersells them badly.
+        They are fast, efficient, low-risk and remarkably profitable when handled correctly.
+      </p>
+    </div>
+
+    <div class="grid g2" style="margin-top:42px">
+      <div class="card">
+        <div class="ic">🍖</div>
+        <h3>Health Benefits of Goat Meat</h3>
+        <p style="margin-bottom:12px">
+          Goat meat (chevon) is one of the healthiest red meats available:
+        </p>
+        <ul style="padding-left:20px;color:var(--muted);font-size:.94rem;line-height:2">
+          <li>Lower in saturated fat than beef, lamb or pork</li>
+          <li>Higher in iron and protein per gram</li>
+          <li>Easier to digest — gentle on the stomach</li>
+          <li>Rich in vitamin B12, zinc and potassium</li>
+          <li>Recommended for low-cholesterol diets</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="ic">🥛</div>
+        <h3>Goat Milk — Nature's Complete Food</h3>
+        <p style="margin-bottom:12px">
+          Goat milk is far more than a by-product:
+        </p>
+        <ul style="padding-left:20px;color:var(--muted);font-size:.94rem;line-height:2">
+          <li>Smaller fat globules — easier to digest than cow milk</li>
+          <li>Naturally A2 protein, gentler for sensitive stomachs</li>
+          <li>High in calcium, phosphorus and vitamin A</li>
+          <li>Excellent for children, the elderly and convalescents</li>
+          <li>Strong demand in health-conscious urban markets</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="ic">💵</div>
+        <h3>Financial Benefits for Farmers</h3>
+        <p style="margin-bottom:12px">
+          A goat is one of the fastest-maturing livestock investments in East Africa:
+        </p>
+        <ul style="padding-left:20px;color:var(--muted);font-size:.94rem;line-height:2">
+          <li>Does can produce 2–3 kids per year</li>
+          <li>Reach market weight in 12–18 months</li>
+          <li>Very low feed cost — they browse almost anything</li>
+          <li>Small starting capital compared to cattle</li>
+          <li>Steady demand during festive seasons and ceremonies</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="ic">🌱</div>
+        <h3>Practical Farm Advantages</h3>
+        <p style="margin-bottom:12px">
+          Goats fit into almost any farm setup:
+        </p>
+        <ul style="padding-left:20px;color:var(--muted);font-size:.94rem;line-height:2">
+          <li>Need very little space — a small shed is enough</li>
+          <li>Thrive on shrubs, weeds and crop residues</li>
+          <li>Manure is premium organic fertiliser</li>
+          <li>Hardy and adaptable to different climates</li>
+          <li>Easy to handle, even for women and children</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section tight">
+      <div class="cta-band">
+        <h2>Turn Grass Into Money</h2>
+        <p>
+          The farmers who succeed with goats are the ones who start with strong, healthy stock.
+          Give your investment the best possible beginning.
+        </p>
+        <div class="btn-row">
+          <a href="tel:+254715061272" class="btn btn-gold">📞 Call to Order Now</a>
+          <a href="#gallery" class="btn btn-ghost">See Available Goats</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 5 — GALLERY
+============================================================ -->
+<section class="page" id="gallery">
+  <div class="wrap section">
+    <div class="center">
+      <span class="eyebrow">Our Gallery</span>
+      <h2>Meet the Herd</h2>
+      <p class="lead">
+        Every goat below is real, farm-raised and available. Tap any photo to see full details,
+        then call us to reserve the one you want.
+      </p>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid" style="margin-top:40px"></div>
+
+    <div class="center" style="margin-top:44px">
+      <p style="margin-bottom:18px">See one you like? It can be yours today.</p>
+      <a href="tel:+254715061272" class="btn btn-gold">📞 Call to Reserve a Goat</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 6 — REVIEWS
+============================================================ -->
+<section class="page" id="reviews">
+  <div class="wrap section">
+    <div class="center">
+      <span class="eyebrow">Customer Reviews</span>
+      <h2>What Our Farmers Say</h2>
+      <p class="lead">
+        We do not advertise much — most of our customers come from other customers.
+        Here is what they say after buying from Kirimaini Goat Farm.
+      </p>
+    </div>
+
+    <div class="grid g3" style="margin-top:40px" id="reviewsGrid"></div>
+
+    <div class="section tight">
+      <div class="cta-band">
+        <h2>Join 500+ Satisfied Farmers</h2>
+        <p>Add your own success story. Call us today and let us help you choose the right goat.</p>
+        <div class="btn-row">
+          <a href="tel:+254715061272" class="btn btn-gold">📞 Call to Order</a>
+          <a href="#gallery" class="btn btn-ghost">Browse Gallery</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 7 — FAQs
+============================================================ -->
+<section class="page" id="faqs">
+  <div class="wrap section">
+    <div class="center">
+      <span class="eyebrow">Questions &amp; Answers</span>
+      <h2>Frequently Asked Questions</h2>
+      <p class="lead">
+        Everything buyers usually ask before placing an order. If your question is not here,
+        just call us — we are happy to explain.
+      </p>
+    </div>
+
+    <div class="faq-list" style="margin-top:40px" id="faqList"></div>
+
+    <div class="center" style="margin-top:40px">
+      <p style="margin-bottom:18px">Still have a question? A quick call settles everything.</p>
+      <a href="tel:+254715061272" class="btn btn-gold">📞 Call Us Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 8 — CONTACT
+============================================================ -->
+<section class="page" id="contact">
+  <div class="wrap section">
+    <div class="center">
+      <span class="eyebrow">Get in Touch</span>
+      <h2>Contact Kirimaini Goat Farm</h2>
+      <p class="lead">
+        Orders are handled by phone call only. Fill in the form and we will call you back,
+        or simply call us directly to reserve your goat right away.
+      </p>
+    </div>
+
+    <div class="grid g2" style="margin-top:44px;align-items:start">
+      <div class="form-card">
+        <h3 style="color:var(--green);margin-bottom:6px">Request a Call Back</h3>
+        <p style="font-size:.9rem;margin-bottom:20px">
+          Tell us what you are looking for and we will phone you with availability and prices.
+        </p>
+
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="cname">Your Name</label>
+            <input type="text" id="cname" placeholder="e.g. Peter Kamau" required />
+          </div>
+          <div class="field">
+            <label for="cphone">Your Phone Number</label>
+            <input type="tel" id="cphone" placeholder="e.g. 07XX XXX XXX" required />
+          </div>
+          <div class="field">
+            <label for="cinterest">What are you looking for?</label>
+            <select id="cinterest">
+              <option>Breeding He-Goat</option>
+              <option>Meat Goat</option>
+              <option>Breeding Doe</option>
+              <option>Dairy Goat</option>
+              <option>Young Weaner</option>
+              <option>Not sure — need advice</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cmsg">Message (optional)</label>
+            <textarea id="cmsg" placeholder="Tell us your location, quantity needed, or any question..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-green" style="width:100%">📩 Send Request</button>
+        </form>
+
+        <div class="success" id="formSuccess">
+          ✅ Thank you! Your request has been received. We will call you back shortly.
+        </div>
+
+        <div class="note">
+          <b>Please note:</b> We do <b>not</b> take orders through WhatsApp. All orders are
+          confirmed by a phone call so that we can discuss the animal, the price and delivery properly.
+        </div>
+      </div>
+
+      <div>
+        <div class="card" style="margin-bottom:22px">
+          <div class="ic">📞</div>
+          <h3>Order by Phone Call</h3>
+          <p style="margin-bottom:18px">
+            Calling is the fastest way to buy. We confirm availability, agree on a price and
+            arrange delivery — all in one short conversation.
+          </p>
+          <!-- Phone number kept hidden — dials directly, no WhatsApp -->
+          <a href="tel:+254715061272" class="btn btn-gold" style="width:100%">📞 Call to Order Now</a>
+          <p style="font-size:.79rem;margin-top:12px;text-align:center;opacity:.8">
+            Number revealed on dial. Phone orders only — no WhatsApp.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom:6px">Farm Details</h3>
+          <div class="info-line">
+            <div class="ic">📍</div>
+            <div><b>Location</b><span>Kirimaini, Ol Kalou, Nyandarua County, Kenya</span></div>
+          </div>
+          <div class="info-line">
+            <div class="ic">🕐</div>
+            <div><b>Visiting Hours</b><span>Monday – Saturday, 8:00 AM – 6:00 PM</span></div>
+          </div>
+          <div class="info-line">
+            <div class="ic">🚚</div>
+            <div><b>Delivery</b><span>Nyandarua, Nakuru, Nyeri, Laikipia &amp; beyond</span></div>
+          </div>
+          <div class="info-line">
+            <div class="ic">🗺️</div>
+            <div><b>Find Us</b><span><a href="#location" style="color:var(--gold2);font-weight:600">Open the map →</a></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 9 — LOCATION (REAL MAP)
+============================================================ -->
+<section class="page" id="location">
+  <div class="wrap section">
+    <div class="center">
+      <span class="eyebrow">Find Us</span>
+      <h2>Visit Us in Kirimaini, Ol Kalou</h2>
+      <p class="lead">
+        We are located at Kirimaini in Ol Kalou, Nyandarua County — right in the heart of
+        Kenya's highland farming region. Come and see the animals for yourself.
+      </p>
+    </div>
+
+    <div style="margin-top:40px" class="map-frame">
+      <iframe
+        title="Map of Kirimaini, Ol Kalou, Nyandarua County, Kenya"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=36.3000%2C-0.3450%2C36.4500%2C-0.2050&amp;layer=mapnik&amp;marker=-0.2747%2C36.3753"
+        loading="lazy"></iframe>
+    </div>
+
+    <div class="grid g2" style="margin-top:34px;align-items:start">
+      <div class="card">
+        <h3 style="margin-bottom:6px">Farm Address</h3>
+        <div class="info-line">
+          <div class="ic">📍</div>
+          <div><b>Village</b><span>Kirimaini</span></div>
+        </div>
+        <div class="info-line">
+          <div class="ic">🏙️</div>
+          <div><b>Town</b><span>Ol Kalou</span></div>
+        </div>
+        <div class="info-line">
+          <div class="ic">🗺️</div>
+          <div><b>County</b><span>Nyandarua County, Kenya</span></div>
+        </div>
+        <div class="info-line">
+          <div class="ic">🌍</div>
+          <div><b>Coordinates</b><span>Approx. -0.2747, 36.3753</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-bottom:6px">Plan Your Visit</h3>
+        <p style="font-size:.94rem;margin-bottom:16px">
+          We welcome buyers who want to inspect the animals in person before purchasing —
+          in fact, we encourage it. Seeing the herd, the housing and the feeding programme
+          tells you more than any photo ever could.
+        </p>
+        <p style="font-size:.94rem;margin-bottom:20px">
+          Call ahead so we can prepare the animals you want to see and make sure someone
+          is available to walk you through the farm.
+        </p>
+        <div class="btn-row">
+          <a href="tel:+254715061272" class="btn btn-gold">📞 Call Before Visiting</a>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=-0.2747,36.3753"
+             target="_blank" rel="noopener" class="btn btn-outline">🧭 Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PAGE 10 — HOW TO ORDER
+============================================================ -->
+<section class="page" id="order">
+  <div class="wrap section">
+    <div class="center">
+      <span class="eyebrow">Simple &amp; Safe</span>
+      <h2>How to Order Your Goat</h2>
+      <p class="lead">
+        Four short steps from your first call to a healthy goat standing on your farm.
+        No WhatsApp, no complicated forms — just a direct conversation.
+      </p>
+    </div>
+
+    <div class="grid g2" style="margin-top:44px;gap:28px">
+      <div class="card"><div class="step">
+        <div class="num">1</div>
+        <div>
+          <h3>Call Us</h3>
+          <p>Dial our number and tell us what you need — a breeding he-goat, a meat goat,
+             a dairy doe or a whole starter herd.</p>
+        </div>
+      </div></div>
+
+      <div class="card"><div class="step">
+        <div class="num">2</div>
+        <div>
+          <h3>Choose Your Animal</h3>
+          <p>We describe what is available — age, weight, breed, health status and price.
+             You can also visit the farm to inspect the animals yourself.</p>
+        </div>
+      </div></div>
+
+      <div class="card"><div class="step">
+        <div class="num">3</div>
+        <div>
+          <h3>Confirm &amp; Pay</h3>
+          <p>Once you are happy, we agree on the price and confirm your order.
+             Payment is made directly to the farm — simple and transparent.</p>
+        </div>
+      </div></div>
+
+      <div class="card"><div class="step">
+        <div class="num">4</div>
+        <div>
+          <h3>Collect or Delivery</h3>
+          <p>Pick up your goat at the farm, or let us deliver it safely to your location
+             within Nyandarua and neighbouring counties.</p>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="section tight">
+      <div class="cta-band">
+        <h2>One Call Is All It Takes</h2>
+        <p>
+          Our lines are open Monday to Saturday, 8:00 AM – 6:00 PM. Speak to a real farmer,
+          get real answers, and reserve the goat you want today.
+        </p>
+        <div class="btn-row">
+          <a href="tel:+254715061272" class="btn btn-gold">📞 Call to Order Now</a>
+          <a href="#gallery" class="btn btn-ghost">View Gallery First</a>
+        </div>
+        <p style="font-size:.8rem;margin-top:16px;opacity:.75">
+          Phone call orders only · No WhatsApp orders
+        </p>
+      </div>
+    </div>
+
+    <div class="note" style="max-width:800px;margin:0 auto">
+      <b>Why call instead of WhatsApp?</b> Because buying livestock is a serious decision.
+      A phone call lets us ask the right questions, understand your farm setup, and match you
+      with an animal that will genuinely perform — not just one that looks good in a photo.
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lbClose" aria-label="Close">✕</button>
+  <div class="lb-inner">
+    <img id="lbImg" alt="" />
+    <div class="lb-body">
+      <h3 id="lbTitle"></h3>
+      <p id="lbDesc"></p>
+      <div style="margin-top:18px">
+        <a href="tel:+254715061272" class="btn btn-gold" style="width:100%">📞 Call to Order This Goat</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-logo"><span class="logo-mark">🐐</span> Kirimaini Goat Farm</div>
+        <p>
+          Premium goats and he-goats raised on the cool highlands of Kirimaini, Ol Kalou,
+          Nyandarua County. Healthy stock, honest prices, real advice.
+        </p>
+        <a href="tel:+254715061272" class="f-call">📞 Call to Order</a>
+      </div>
+
+      <div>
+        <h4>Menu</h4>
+        <a href="#home">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#location">Location</a>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <a href="#breeds">Our Goats</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#order">How to Order</a>
+        <a href="#gallery">Available Stock</a>
+      </div>
+
+      <div>
+        <h4>Visit the Farm</h4>
+        <p>Kirimaini, Ol Kalou<br />Nyandarua County, Kenya</p>
+        <p style="margin-top:10px">Mon – Sat · 8:00 AM – 6:00 PM</p>
+        <p style="margin-top:10px;font-size:.82rem;opacity:.75">Orders by phone call only.</p>
+      </div>
+    </div>
+
+    <div class="f-bottom">
+      <span>© <span id="yr"></span> Kirimaini Goat Farm. All rights reserved.</span>
+      <span>Raised with care in Nyandarua County 🐐</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   GOAT ILLUSTRATION GENERATOR (Fallback if image is missing)
+============================================================ */
+function goatArt(c1, c2, coat, dark, horn, spots){
+  const spotSVG = spots
+    ? `<circle cx="88" cy="104" r="11" fill="${dark}" opacity=".55"/>
+       <circle cx="122" cy="122" r="8" fill="${dark}" opacity=".5"/>
+       <circle cx="112" cy="96" r="6" fill="${dark}" opacity=".45"/>`
+    : '';
+
+  const svg = `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/>
+    </linearGradient>
+    <linearGradient id="gnd" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8dbd72"/><stop offset="1" stop-color="#3c6b38"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#sky)"/>
+  <circle cx="330" cy="60" r="30" fill="#ffe6a8" opacity=".85"/>
+  <ellipse cx="60" cy="70" rx="46" ry="17" fill="#ffffff" opacity=".35"/>
+  <ellipse cx="120" cy="52" rx="34" ry="14" fill="#ffffff" opacity=".28"/>
+  <path d="M0 206 Q90 166 180 200 T400 188 L400 300 L0 300Z" fill="#a8cf8b" opacity=".5"/>
+  <rect y="228" width="400" height="72" fill="url(#gnd)"/>
+  <g stroke="#2f6b34" stroke-width="3" stroke-linecap="round" opacity=".7" fill="none">
+    <path d="M40 258 q4 -14 10 -18"/><path d="M48 258 q0 -16 4 -20"/>
+    <path d="M330 262 q4 -14 10 -18"/><path d="M340 262 q0 -16 4 -20"/>
+    <path d="M250 268 q4 -12 9 -16"/>
+  </g>
+  <g transform="translate(105,56)">
+    <rect x="118" y="126" width="11" height="46" rx="5" fill="${dark}"/>
+    <rect x="134" y="128" width="11" height="44" rx="5" fill="${dark}"/>
+    <rect x="118" y="164" width="11" height="9" rx="3" fill="#2b2b28"/>
+    <rect x="134" y="164" width="11" height="9" rx="3" fill="#2b2b28"/>
+    <rect x="62" y="126" width="11" height="46" rx="5" fill="${coat}"/>
+    <rect x="80" y="128" width="11" height="44" rx="5" fill="${coat}"/>
+    <rect x="62" y="164" width="11" height="9" rx="3" fill="#2b2b28"/>
+    <rect x="80" y="164" width="11" height="9" rx="3" fill="#2b2b28"/>
+    <path d="M156 100 q17 -10 11 -25 q-3 17 -15 19 z" fill="${dark}"/>
+    <ellipse cx="106" cy="112" rx="54" ry="32" fill="${coat}"/>
+    ${spotSVG}
+    <path d="M64 122 L46 76 L77 68 L89 108 Z" fill="${coat}"/>
+    <ellipse cx="50" cy="70" rx="24" ry="17" transform="rotate(-18 50 70)" fill="${coat}"/>
+    <ellipse cx="29" cy="78" rx="10" ry="8" fill="${dark}" opacity=".75"/>
+    <ellipse cx="68" cy="55" rx="12" ry="6" transform="rotate(-32 68 55)" fill="${dark}"/>
+    <path d="M46 56 q-9 -21 6 -29" fill="none" stroke="${horn}" stroke-width="6" stroke-linecap="round"/>
+    <path d="M60 54 q0 -21 15 -25" fill="none" stroke="${horn}" stroke-width="6" stroke-linecap="round"/>
+    <path d="M30 86 q-3 17 6 21 q4 -15 9 -19 z" fill="${dark}"/>
+    <circle cx="42" cy="68" r="3.2" fill="#1c1c1c"/>
+    <circle cx="43" cy="67" r="1.1" fill="#ffffff"/>
+  </g>
+</svg>`;
+  return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+}
+
+/* ============================================================
+   GOAT DATA — 12 Goats with generated illustrations.
+   To use your own photos, just change the `photo` field to
+   'goat1.jpg' etc., and place those images in the same folder.
+============================================================ */
+const GOATS = [
+  { name:'Simba',  tag:'Boer Cross He-Goat', price:'KES 18,500', desc:'18 months · 62 kg · proven sire with excellent muscling.',
+    photo:'', art:['#bfe3f5','#e8f4e0','#a9663c','#7a4526','#efe2c8',false] },
+  { name:'Jabali', tag:'Mature He-Goat',      price:'KES 24,000', desc:'26 months · 71 kg · powerful frame, top breeding choice.',
+    photo:'', art:['#ffd9a8','#ffeccb','#e8e0d2','#c4b8a4','#c9a06a',false] },
+  { name:'Neema',  tag:'Breeding Doe',        price:'KES 14,500', desc:'20 months · 42 kg · has kidded twice, excellent mother.',
+    photo:'', art:['#cfe9d4','#eef8e6','#c99a63','#8f6437','#f0e4cc',true] },
+  { name:'Chui',   tag:'Kalahari Red He-Goat',price:'KES 21,000', desc:'22 months · 65 kg · heat tolerant, premium carcass.',
+    photo:'', art:['#ffd0b8','#ffe9d6','#b8542f','#7d3419','#f2e0c4',false] },
+  { name:'Malkia', tag:'Dairy Doe (Toggenburg)', price:'KES 26,000', desc:'30 months · in milk · 2.6 L daily, calm and easy to milk.',
+    photo:'', art:['#d6e4f7','#eef4ff','#e9e3d6','#a89a86','#c9a06a',true] },
+  { name:'Tembo',  tag:'Galla He-Goat',       price:'KES 19,500', desc:'20 months · 58 kg · drought hardy, outstanding vigour.',
+    photo:'', art:['#ffe0b8','#fff3dd','#f0ece2','#c0b6a2','#d4b483',false] },
+  { name:'Zawadi', tag:'Young Weaner',        price:'KES 8,500',  desc:'5 months · 22 kg · healthy and growing fast, great starter.',
+    photo:'', art:['#d3ecdc','#f1fbf1','#8a5a3b','#5e3a24','#efe2c8',false] },
+  { name:'Bwana',  tag:'Proven He-Goat',      price:'KES 28,000', desc:'32 months · 76 kg · sires strong, fast-growing offspring.',
+    photo:'', art:['#c9dff0','#eaf5ff','#3a3630','#242220','#e6dcc4',false] },
+  { name:'Furaha', tag:'Boer Cross Doe',      price:'KES 16,000', desc:'24 months · 48 kg · heavy-boned, superb meat genetics.',
+    photo:'', art:['#ffdcc4','#fff0e2','#c98b52','#8d5a2c','#f2e4cc',true] },
+  { name:'Nguvu',  tag:'Alpine He-Goat',      price:'KES 22,500', desc:'24 months · 63 kg · dual-purpose, superb adaptability.',
+    photo:'', art:['#d8e8d0','#f3faf0','#6b6a63','#43423d','#e8dcc2',false] },
+  { name:'Amani',  tag:'Small East African Doe', price:'KES 9,800', desc:'16 months · 32 kg · native, resilient, low maintenance.',
+    photo:'', art:['#ffe6cc','#fff6e8','#a97a4c','#6f4a26','#efe0c6',false] },
+  { name:'Shujaa', tag:'Premium Meat Goat',   price:'KES 20,000', desc:'16 months · 55 kg · butcher-ready, prime condition.',
+    photo:'', art:['#cfe6f2','#eef8ff','#8f6a4a','#5d4029','#f0e2c8',true] }
+];
+
+/* ---- Render Gallery ---- */
+const grid = document.getElementById('galleryGrid');
+GOATS.forEach((g, i) => {
+  const src = g.photo || goatArt(...g.art);
+  const fallback = goatArt(...g.art);
+  
+  const el = document.createElement('article');
+  el.className = 'gcard';
+  el.innerHTML = `
+    <div class="thumb">
+      <span class="badge">${g.tag}</span>
+      <img src="${src}" 
+           onerror="this.onerror=null; this.src='${fallback}'" 
+           alt="${g.name} — ${g.tag} at Kirimaini Goat Farm" 
+           loading="lazy" />
+      <span class="price">${g.price}</span>
+    </div>
+    <div class="info">
+      <h4>${g.name}</h4>
+      <p>${g.desc}</p>
+    </div>`;
+  el.addEventListener('click', () => openLightbox(i));
+  grid.appendChild(el);
+});
+
+/* ---- Hero + About art ---- */
+document.getElementById('heroArt').src = goatArt('#bfe3f5','#e9f5df','#a9663c','#7a4526','#efe2c8',true);
+document.getElementById('aboutArt').src = goatArt('#ffd9a8','#fff0d6','#e8e0d2','#c4b8a4','#c9a06a',false);
+
+/* ---- Lightbox ---- */
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lbImg');
+const lbTitle = document.getElementById('lbTitle');
+const lbDesc = document.getElementById('lbDesc');
+
+function openLightbox(i){
+  const g = GOATS[i];
+  const src = g.photo || goatArt(...g.art);
+  const fallback = goatArt(...g.art);
+  
+  lbImg.src = src;
+  lbImg.onerror = function() { this.src = fallback; };
+  lbImg.alt = g.name + ' — ' + g.tag;
+  lbTitle.textContent = g.name + ' · ' + g.tag;
+  lbDesc.textContent = g.desc + ' Price guide: ' + g.price + '. Call to confirm availability and reserve.';
+  lb.classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox(){
+  lb.classList.remove('show');
+  document.body.style.overflow = '';
+}
+document.getElementById('lbClose').addEventListener('click', closeLightbox);
+lb.addEventListener('click', e => { if(e.target === lb) closeLightbox(); });
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeLightbox(); });
+
+/* ============================================================
+   REVIEWS
+============================================================ */
+const REVIEWS = [
+  { n:'Peter Kamau', l:'Ol Kalou, Nyandarua', s:5,
+    t:'I bought a Boer cross he-goat from this farm and it has completely changed my herd. Within one year my kids were heavier than my neighbours\'. The owner even followed up to check how the goat was settling in.' },
+  { n:'Grace Wanjiru', l:'Nyahururu', s:5,
+    t:'Very honest people. They told me exactly the age and weight of the doe before I travelled, and everything matched. The goat was clean, healthy and calm. I will definitely buy again.' },
+  { n:'Samuel Mwangi', l:'Nakuru', s:5,
+    t:'I have bought three goats here over two years. All of them arrived in perfect condition. What I appreciate most is the free advice on feeding and breeding — it has saved me a lot of money.' },
+  { n:'Mary Njeri', l:'Kinangop', s:4,
+    t:'Good quality animals and fair prices. Delivery was well organised and the goat was not stressed at all. Only wish I had discovered this farm earlier.' },
+  { n:'Joseph Kariuki', l:'Nyeri', s:5,
+    t:'The he-goat I bought is strong and has already sired healthy kids. You can tell these animals are well fed and well cared for. Highly recommended for anyone serious about goat farming.' },
+  { n:'Esther Achieng', l:'Laikipia', s:5,
+    t:'First time buying livestock and I was nervous, but they explained everything patiently on the phone. The goat is thriving and giving me beautiful kids. Thank you Kirimaini Goat Farm!' }
+];
+
+const rGrid = document.getElementById('reviewsGrid');
+REVIEWS.forEach(r => {
+  const el = document.createElement('article');
+  el.className = 'review';
+  el.innerHTML = `
+    <div class="stars">${'★'.repeat(r.s)}${'☆'.repeat(5 - r.s)}</div>
+    <p>"${r.t}"</p>
+    <div class="who">
+      <div class="avatar">${r.n.charAt(0)}</div>
+      <div><b>${r.n}</b><span>${r.l}</span></div>
+    </div>`;
+  rGrid.appendChild(el);
+});
+
+/* ============================================================
+   FAQs
+============================================================ */
+const FAQS = [
+  { q:'How do I place an order?',
+    a:'All orders are placed by phone call. Simply call us, tell us the type of goat you want, and we will confirm availability, price and delivery arrangements on the same call. We do not take orders through WhatsApp.' },
+  { q:'Can I come and see the goats before buying?',
+    a:'Absolutely — we encourage it. Visit us at Kirimaini, Ol Kalou, Nyandarua County, Monday to Saturday between 8:00 AM and 6:00 PM. Call ahead so we can prepare the animals you want to see.' },
+  { q:'Are the goats vaccinated and healthy?',
+    a:'Yes. Every goat is dewormed, vaccinated and inspected by a licensed veterinary officer before sale. We will gladly share the health history of the specific animal you are buying.' },
+  { q:'Do you deliver, and how much does it cost?',
+    a:'Yes, we deliver. Delivery within Nyandarua is usually free or very low cost. For Nakuru, Nyeri, Laikipia and other counties, the cost depends on distance and is agreed before you pay. Goats are transported in comfortable crates to minimise stress.' },
+  { q:'What breeds do you have available?',
+    a:'We keep Boer and Boer crosses, Galla, Small East African, Toggenburg, Alpine, Kalahari Red and quality crossbreed he-goats. Availability changes weekly, so call us for what is in stock right now.' },
+  { q:'What is the best age to buy a goat for meat?',
+    a:'For meat, 12 to 18 months is ideal — the animal has developed good muscle but the meat is still tender. For breeding, buy a he-goat at 8 to 12 months so it adapts to your farm before it starts working.' },
+  { q:'How many goats should a beginner start with?',
+    a:'We usually recommend starting with one good he-goat and two to three healthy does. That gives you a solid breeding base without overstretching your budget or your housing. We will advise you honestly based on your space and feed.' },
+  { q:'Do you offer advice after I buy?',
+    a:'Yes, and it is free. Call us any time with questions about feeding, housing, breeding cycles, health or market timing. We want your herd to succeed — that is how we earn referrals.' },
+  { q:'What payment methods do you accept?',
+    a:'Payment is arranged directly with the farm when you call. We will explain the accepted methods and confirm your order in writing once payment is settled.' },
+  { q:'Why do you not accept WhatsApp orders?',
+    a:'Buying livestock is a serious decision that deserves a real conversation. On a phone call we can ask about your farm, your feed and your goals, then match you with an animal that will genuinely perform. It protects you from buying the wrong goat.' }
+];
+
+const faqList = document.getElementById('faqList');
+FAQS.forEach(f => {
+  const el = document.createElement('div');
+  el.className = 'faq';
+  el.innerHTML = `
+    <button class="faq-q">${f.q}<span class="plus">+</span></button>
+    <div class="faq-a"><p>${f.a}</p></div>`;
+  const btn = el.querySelector('.faq-q');
+  const ans = el.querySelector('.faq-a');
+  btn.addEventListener('click', () => {
+    const isOpen = el.classList.contains('open');
+    document.querySelectorAll('.faq.open').forEach(o => {
+      o.classList.remove('open');
+      o.querySelector('.faq-a').style.maxHeight = null;
+    });
+    if(!isOpen){
+      el.classList.add('open');
+      ans.style.maxHeight = ans.scrollHeight + 'px';
+    }
+  });
+  faqList.appendChild(el);
+});
+
+/* ============================================================
+   DRAWER MENU
+============================================================ */
+const burger  = document.getElementById('burger');
+const drawer  = document.getElementById('drawer');
+const overlay = document.getElementById('overlay');
+const closeBtn = document.getElementById('closeBtn');
+
+function openDrawer(){
+  drawer.classList.add('open');
+  overlay.classList.add('show');
+  burger.classList.add('x');
+  burger.setAttribute('aria-expanded','true');
+  document.body.style.overflow = 'hidden';
+}
+function closeDrawer(){
+  drawer.classList.remove('open');
+  overlay.classList.remove('show');
+  burger.classList.remove('x');
+  burger.setAttribute('aria-expanded','false');
+  document.body.style.overflow = '';
+}
+burger.addEventListener('click', () => {
+  drawer.classList.contains('open') ? closeDrawer() : openDrawer();
+});
+closeBtn.addEventListener('click', closeDrawer);
+overlay.addEventListener('click', closeDrawer);
+document.querySelectorAll('.drawer a').forEach(a => a.addEventListener('click', closeDrawer));
+
+/* ============================================================
+   ROUTER — hash based, 10 real pages
+============================================================ */
+const TITLES = {
+  home:'Home', about:'About Us', breeds:'Our Goats', benefits:'Benefits',
+  gallery:'Gallery', reviews:'Reviews', faqs:'FAQs', contact:'Contact',
+  location:'Location', order:'How to Order'
+};
+
+const pages = Array.from(document.querySelectorAll('.page'));
+
+function route(){
+  let id = (location.hash || '#home').replace('#','');
+  if(!document.getElementById(id) || !document.getElementById(id).classList.contains('page')){
+    id = 'home';
+  }
+
+  pages.forEach(p => p.classList.toggle('active', p.id === id));
+
+  document.querySelectorAll('[data-nav]').forEach(a => {
+    a.classList.toggle('active', a.dataset.nav === id);
+  });
+
+  document.title = (TITLES[id] || 'Home') + ' | Kirimaini Goat Farm — Ol Kalou, Nyandarua';
+
+  closeDrawer();
+  closeLightbox();
+  window.scrollTo(0, 0);
+
+  document.querySelectorAll('.faq.open').forEach(o => {
+    o.querySelector('.faq-a').style.maxHeight = o.querySelector('.faq-a').scrollHeight + 'px';
+  });
+}
+
+window.addEventListener('hashchange', route);
+window.addEventListener('load', route);
+route();
+
+/* ============================================================
+   CONTACT FORM
+============================================================ */
+const form = document.getElementById('contactForm');
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  const name = document.getElementById('cname').value.trim();
+  const phone = document.getElementById('cphone').value.trim();
+
+  if(!name || !phone){
+    alert('Please enter your name and phone number so we can call you back.');
+    return;
+  }
+
+  document.getElementById('formSuccess').classList.add('show');
+  form.reset();
+  setTimeout(() => document.getElementById('formSuccess').classList.remove('show'), 8000);
+});
+
+/* Footer year */
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
